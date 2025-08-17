@@ -1,0 +1,24 @@
+.reflection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+/* responsive for smaller screens */
+@media (max-width: 900px) {
+    .reflection-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .reflection-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+

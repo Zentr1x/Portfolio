@@ -5,12 +5,16 @@ import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-function ReflectionCard({ title, date, description, image }) {
+import { Link } from "react-router-dom";
+
+function ReflectionCard({ title, date, description, image, nav }) {
+  const isExternal = nav.startsWith("http"); // checks if link is http
+
   return (
-    <Card variant="outlined">
+    <Card variant="outlined" sx={{maxWidth:420,borderColor: "lightblue"}}>
         <CardMedia
           component="img"
-          height="140"
+          height="300"
           image={image}
           alt={title}
         />
@@ -26,7 +30,15 @@ function ReflectionCard({ title, date, description, image }) {
         </Typography>
       </CardContent>
       <CardActions>
-          <Button size="small">Learn More</Button>
+        {isExternal ? (
+          <a href={nav} target="_blank" rel="noopener noreferrer">
+            <Button size="small">Learn more</Button>
+          </a>
+        ) : (
+          <Link to={`/${nav}`}>
+            <Button size="small">Learn more</Button>
+          </Link>
+        )}
       </CardActions>
     </Card>
   );

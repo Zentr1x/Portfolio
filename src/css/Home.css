@@ -1,3 +1,130 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap'); */
+
 body {
-    padding: 20px;
+    margin: 0px;
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #01164d;
+}
+
+.hero-image {
+  background-image: url('../assets/landing_page.jpg'); 
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  color: aliceblue;
+  font-size: 100px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.career {
+  color: aliceblue;
+  font-size: 32px;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+.landing-btn {
+  background-color: #ff9e16 !important;
+  color: darkblue !important;
+}
+
+.container {
+  padding: 10px;
+  margin: 10px auto;
+  width: 70%;
+  /* background-color: rgb(0, 145, 145); */
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeline-container {
+  /* align-self: left !important; */
+  /* background-color: aliceblue; */
+  padding: 5px;
+}
+
+.timeline-header {
+  color: rgb(255, 255, 255);
+  font-weight: 300 !important;
+  font-size: 36px;
+}
+
+.timeline-item {
+  color: #01164d;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.timeline-details {
+  color: #01164d;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.about-container {
+  border-width: 10px;
+  border-right: solid #ff9e16;
+  width: 35%;
+}
+
+.skills-container {
+  border-width: 10px;
+  border-left: solid #ff9e16;
+  width: 35%;
+}
+
+
+.subheader {
+  color: #ff9e16;
+  font-weight: 500;
+  font-size: 44px;
+  text-align: center;
+}
+
+.subtext-bold {
+  font-weight: 600;
+}
+
+.subtext {
+  color:#01164d;
+  font-size: 20px;
+}
+
+.subtext-container {
+  width: 65%; 
+  background-color: aliceblue;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 15px;
+}
+
+.row {
+  margin-top:50px;
+  margin-bottom:50px;
+  display: flex;
+  align-items: center;
+}
+
+.projects {
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+}
+
+.timeline-content {
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding: 15px;
 }

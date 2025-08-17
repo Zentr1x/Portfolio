@@ -4,7 +4,8 @@ import Navbar from "./components/Navbar"
 import Home from "./pages/Home";
 import Game from "./pages/Game";
 import RPS from "./pages/RPS"
-import Reflection from "./pages/Reflection"
+import ReflectionHome from "./pages/ReflectionHome"
+import Reflection1 from "./pages/reflections/Reflection1"
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/game" element={<Game />} />
         <Route path="/rps" element={<RPS />} />
-        <Route path="/reflection" element={<Reflection />} />
+        <Route path="/reflection-home" element={<ReflectionHome />} />
+        <Route path="/reflection-1" element={<Reflection1/>} />
       </Routes>
 
     </div>

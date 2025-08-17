@@ -1,0 +1,50 @@
+nav {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 10px;
+    background-color: #01164d;
+    color:aliceblue
+}
+
+.home-navbar ul {
+    background-color: transparent;
+}
+
+.home-navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    color: white;
+}
+
+.navbar li {
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-number {
+    display: block;
+    align-self: flex-end;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}

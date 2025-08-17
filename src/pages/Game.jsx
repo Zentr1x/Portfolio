@@ -1,5 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 
+
+import "../css/Game.css"
+
 export default function Game() {
   const canvasRef = useRef(null);
   const ctxRef = useRef(null)
@@ -134,9 +137,8 @@ export default function Game() {
 
   return (
     <div>
-      <h1>Game Page</h1>
-      {/* temp styling */}
-      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100vw" }}>
+      <h1 className="title">Game Page(scrapped) - implement three js animations instead</h1>
+      <div className='board'>
         <canvas ref={canvasRef}></canvas>
       </div>
     </div>
